@@ -1,0 +1,431 @@
+body
+{
+    margin: 0;
+}
+.container
+{
+    margin: auto;
+    width: 1170px;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*header*/
+header
+{
+   overflow: hidden; 
+   padding: 20px 40px;
+   background-color: #85586F;
+   margin-bottom: 0;
+}
+
+header a
+{
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    line-height: 25px;
+    float: left;
+}
+
+header a.logo 
+{  
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #F8ECD1;
+    color: #85586F;
+    border-radius: 10px;
+    overflow: hidden;
+}
+nav
+{
+    float: right;
+}
+
+nav a{
+    font-size: 18px;
+    color: #F8ECD1;
+}
+
+@media screen and (max-width:870px) 
+{
+    header a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        
+    }
+    header
+    {
+        padding: 0;
+    }
+    a.logo
+    {
+        padding: 8px 3px;
+    }
+    nav
+    {
+        float: none;
+    }    
+}
+
+/*intro*/
+.intro
+{
+    margin-top: 0;
+    background-color: #DEB6AB;
+    padding-bottom:60px ;
+    margin-bottom: 50px;
+}
+.intro-text
+{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    position: relative;
+    top: 70px;
+    color: #85586F;
+}
+.intro img
+{
+    width: 600px;
+    height: 300px;
+    margin-top: 0;
+    display: block;
+    margin-left: auto ;
+    margin-right: auto;
+}
+@media screen and (max-width:870px) {
+    .intro-text
+    {
+        font-size: 20px;
+    }
+    .intro img
+    {
+        width: 200px;
+    }
+    .intro
+    {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*main section*/
+/*categories*/
+.categories
+{
+    background-color: #ecd4cd;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 90%;
+    height: 300px;
+}
+.categories:hover
+{
+    border: none;
+    box-shadow:0px 0px 10px #795869;
+}
+.image {
+    float:right;
+    width:30%;
+
+}
+.text {
+    float:left;
+    width: 60%;
+}
+.text h3 {
+    width:100%;
+    font-size:50px;
+    color: #85586F;
+    text-align: left;
+}
+.text a
+{
+    width:20%;
+    font-size:20px;
+    text-align: center;
+    padding: 5px;
+    border: #85586F 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #85586F;
+    float: left;
+}
+.text a:hover
+{
+    background-color: #85586F;
+    color: #F8ECD1;
+}
+
+/*mobile view*/
+@media screen and (max-width:480px)
+{
+    .categories
+    {
+        height: auto;
+    }
+    .image
+    {
+        display: inline;
+        float: none;
+        width: 90%;
+        padding: 10px;
+    }
+    .text
+    {
+        float: none;
+        width: 100%;
+    }
+    .text h3
+    {
+        font-size: 30px;
+        margin-bottom: 3px;
+    }
+    .text a
+    {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+/*tablet and ipad view*/
+@media screen and (min-width:481px) and (max-width:930px)
+{
+    .categories
+    {
+        height: auto;
+    }
+    .image
+    {
+        display: inline;
+        float: none;
+        width: 90%;
+        padding: 10px;
+    }
+    .text
+    {
+        float: none;
+        width: 100%;
+    }
+    .text h3
+    {
+        font-size: 40px;
+        margin-bottom: 3px;
+    }
+    .text a
+    {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+/*laptops and desktop*/
+@media screen and (min-width: 1025px) and (max-width: 1280px)
+{
+    .categories
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .image
+    {
+        width: 40%;
+    }
+}
+/*large screens*/
+@media screen and (min-width: 1281px)
+{
+
+}
+/*categories1*/
+.categories1
+{
+    background-color: #f0e5e2;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 90%;
+    height: 300px;
+}
+.categories1:hover
+{
+    border: none;
+    box-shadow:0px 0px 10px #795869;
+}
+.image1 {
+    float:left;
+    width:30%;
+}
+.text1 {
+    float:right;
+    width: 60%;
+}
+.text1 h3 {
+    width:100%;
+    font-size:50px;
+    color: #85586F;
+    text-align: right;
+    padding-right: 30px;
+}
+.text1 a
+{
+    width:20%;
+    font-size:20px;
+    text-align: center;
+    padding: 5px;
+    border: #85586F 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-left:15px;
+    color: #85586F;
+    float: right;
+}
+.text1 a:hover
+{
+    background-color: #85586F;
+    color: #F8ECD1;
+}
+@media screen and (max-width:300px)
+{
+    .categories1
+    {
+        height: auto;
+    }
+    .image1
+    {
+        display: inline;
+        float: none;
+        width: 80%;
+    }
+    .text1
+    {
+        float: none;
+        width: 90%;
+    }
+    .text1 h3
+    {
+        font-size: 10px;
+        text-align: left;
+    }
+    .text1 a
+    {
+        font-size: 5px;
+        margin-bottom: 5px;
+        float: left;
+    }
+}
+/*mobile view*/
+@media screen and (max-width:480px)
+{
+    .categories1
+    {
+        height: auto;
+    }
+    .image1
+    {
+        display: inline;
+        float: none;
+        width: 90%;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    .text1
+    {
+        float: none;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .text1 h3
+    {
+        font-size: 30px;
+        margin-bottom: 3px;
+        text-align: left;
+    }
+    .text1 a
+    {
+        font-size: 15px;
+        margin-bottom: 5px;
+        float: left;
+    }
+}
+
+/*tablet and ipad view*/
+@media screen and (min-width:481px) and (max-width:930px)
+{
+    .categories1
+    {
+        height: auto;
+    }
+    .image1
+    {
+        display: inline;
+        float: none;
+        width: 90%;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    .text1
+    {
+        float: none;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .text1 h3
+    {
+        font-size: 40px;
+        margin-bottom: 3px;
+        text-align: left;
+    }
+    .text1 a
+    {
+        font-size: 20px;
+        margin-bottom: 5px;
+        float: left;
+    }
+}
+
+/*laptops and desktop*/
+@media screen and (min-width: 1025px) and (max-width: 1280px)
+{
+    .categories1
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .image1
+    {
+        width: 40%;
+    }
+}
+/*large screens*/
+@media screen and (min-width: 1281px)
+{
+
+}
+
+/*footer*/
+footer
+{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #85586F;
+    color: #F8ECD1;
+    padding: 50px;
+}
+@media screen and (max-width:300px) {
+    footer {
+        text-align: left;
+        padding-left: 2px;
+    }
+    
+}
